@@ -1,0 +1,29 @@
+
+.invitation {
+    background: url('../img/bg_3.jpg') 50% 50%/cover no-repeat fixed;
+    box-shadow: inset 0 0 0 100vh rgba(0, 92, 12, 0.8);
+    height: 130vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #301701;
+}
+
+.invitation p {
+    margin-top: 5%;
+}
+
+.invitation__content {
+    background: white;
+    width: 50%;
+    padding: 5%;
+    text-align: center;
+
+}
+
+@media (max-width: 500px) {
+    .invitation__content {
+        width: 80%;
+        padding: 5%;
+    }
+}

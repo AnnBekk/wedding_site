@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Приглашение на свадьбу</title>
+    <link rel="shortcut icon" href="img/icon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/timer.css">
+    <link rel="stylesheet" href="css/photos.css">
+    <link rel="stylesheet" href="css/dresscode.css">
+    <link rel="stylesheet" href="css/invitation.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/map.css">
+    <script src="js/timer.js"></script>
+</head>
+<body>
+<div class="wrapper>">
+
+    <div class="header">
+        <h1>Свадьба Ивана и Елены!</h1>
+        <p>
+            Ну ты это... Заходи, если шо. <br>
+            <b>Наша свадьба состоится 22 августа 2023 года!</b>
+        </p>
+
+        <p>
+            До свадьбы осталось:
+        </p>
+        <div class="timer">
+            <div class="timer__items">
+                <div class="timer__item timer__days">00</div>
+                <div class="timer__item timer__hours">00</div>
+                <div class="timer__item timer__minutes">00</div>
+                <div class="timer__item timer__seconds">00</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="arrow">
+        <p>
+            Ля-ля-ля, тру-ля-ля, мы ребята хоть куда.
+        </p>
+    </div>
+
+    <div class="photos">
+
+        <div class="photos__big">
+<!--            <img src="img/img_1.jpg" alt="">-->
+        </div>
+
+        <div class="photos__small">
+            <div class="photos__small_first">
+<!--                <img src="img/img_2.jpg" alt="">-->
+            </div>
+            <div class="photos__small_second">
+<!--                <img src="img/img_3.jpg" alt="">-->
+            </div>
+        </div>
+
+        <div class="photos__last_big">
+<!--            <img src="img/img_4.jpg" alt="">-->
+        </div>
+
+    </div>
+
+    <div class="gifts">
+        <div class="gifts__text">
+            <h2>
+                Что нам подарить?
+            </h2>
+            <p>
+                Лучшими подарками для нашей молодой семьи будут ваше присутствие и пожелания, и денежки нас тоже порадуют
+            </p>
+        </div>
+    </div>
+
+    <div class="dress_code">
+
+        <div class="dress_code__photos">
+        </div>
+
+        <div class="dress_code__text">
+            <div>
+                <h2>
+                    Дресс-код
+                </h2>
+
+                <div class="dress_code__line"></div>
+
+                <p>
+                    Летне-официальный (в гавайских шортах не надо).
+                </p>
+
+                <p>
+                    <br>
+                    <b>Мы за удобство и комфорт</b>, поэтому не хотим вас обременять никакими пожеланиями, касаемо одежды.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="invitation">
+        <div class="invitation__content">
+
+            <h4>
+                ПРИГЛАШЕНИЕ
+            </h4>
+
+            <h3>
+                22 августа 2023
+            </h3>
+
+            <p>
+                — 12:00 — <br>
+                <b>Сбор гостей</b>
+            </p>
+
+            <p>
+                Регистрация начнется в 12.00 в серебряном зале центра семьи Казан. Просьба подойти заранее, чтобы мы не потерялись)
+                После регистрации перекусим бутербродами с шампанским и пофоткаемся. После фотосессии будет свободное время до банкета.
+            </p>
+
+            <p>
+                — 16:30 — <br>
+                <b>Ресторан "Веранда"</b>
+            </p>
+
+            <p>
+                Банкет будет проходить в Ривьере, ресторан "Веранда". Сбор гостей начинается в 16:30, начало банкета — в 17:00.
+            </p>
+        </div>
+    </div>
+
+    <div class="questions">
+        <form id="form">
+
+            <div class="questions__form">
+                <label for="name" id="label-name">
+                    Имя и фамилия: <br>
+                </label>
+
+                <input type="text" id="name" name="name" placeholder="Введите ФИО" />
+            </div>
+
+            <div class="questions__form">
+                <label for="phone" id="label-phone">
+                    Телефон: <br>
+                </label>
+
+                <input type="tel" id="phone" name="phone" placeholder="Введите номер телефона" />
+            </div>
+
+            <div class="questions__form questions__input">
+                <label>
+                    Буду присутствовать: <br>
+                </label>
+
+                <div>
+                    <input type="checkbox" id="presents-1" name="presence" value="ceremony"> <label for="presents-1">На регистрации</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="presents-2" name="presence" value="restaurant"> <label for="presents-2">В ресторане</label>
+                </div>
+            </div>
+
+            <div class="questions__form questions__input">
+                <label>
+                    Предпочтения в еде:
+                </label>
+
+                <div>
+                    <input type="radio" id="food-1" name="food" value="meat"> <label for="food-1">Говядина</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="food-3" name="food" value="fish"> <label for="food-3">Рыба</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="food-2" name="food" value="bird"> <label for="food-2">Курица</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="food-4" name="food" value="vegetarian"> <label for="food-4">Вегетарианские блюда</label>
+                </div>
+
+            </div>
+
+            <div class="questions__form questions__input">
+                <label>
+                    Предпочтения в напитках:
+                </label>
+
+                <div>
+                    <input type="checkbox" id="drink-1" name="alcohol" value="rum"> <label for="drink-1">Ром</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="drink-2" name="alcohol" value="whiskey"> <label for="drink-2">Виски</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="drink-3" name="alcohol" value="vodka"> <label for="drink-3">Водка</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="drink-4" name="alcohol" value="champagne"> <label for="drink-4">Шампанское</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="drink-5" name="alcohol" value="wine"> <label for="drink-5">Вино</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="drink-6" name="alcohol" value="beer"> <label for="drink-6">Пиво</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="drink-7" name="alcohol" value="non_alcoholic"> <label for="drink-7">Безалкогольные напитки</label>
+                </div>
+
+            </div>
+
+            <button type="submit" value="submit">
+                Отправить
+            </button>
+            
+        </form>
+    </div>
+
+    <div class="map">
+
+        <div class="contacts">
+            <h2>
+                Свяжитесь с нами по всем вопросам:
+            </h2>
+
+            <p>
+                <b>Елена</b> +7-800-555-35-35
+            </p>
+            <p>
+                <b>Иван</b> +7-900-777-44-33
+            </p>
+        </div>
+
+        <div>
+            <iframe src="https://yandex.ru/map-widget/v1/?from=mapframe&ll=49.091093%2C55.814984&pt=49.108273%2C55.812818~49.129333%2C55.815180&source=mapframe&utm_source=mapframe&z=14.6"
+                    class="map__iframe">
+            </iframe>
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="js/form.js"></script>
+
+</body>
+</html>
